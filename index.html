@@ -35,9 +35,9 @@
                'manrope': 'Manrope, sans-serif',
               },
               backgroundImage: (theme) => ({
-                'bg-1-bg': "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)), url('./images/2.png')",
-                'bg-2-bg' : "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)) , url('./images/3.png')",
-                'bg-3-bg' : "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)) , url('./images/3.png')",
+                '1-bg': "linear-gradient(to top, rgba(19, 19, 24, 0.5),rgba(19, 19, 24, 0.5)), url('./Images/2.png')",
+                '2-bg' : "linear-gradient(to top, rgba(19, 19, 24, 0.5),rgba(19, 19, 24, 0.5)) , url('./Images/3.png')",
+                '3-bg' : "linear-gradient(to top, rgba(19, 19, 24, 0.5),rgba(19, 19, 24, 0.5)) , url('./Images/4.png')",
               }),
 
             }
@@ -217,18 +217,294 @@
 
 
         <!-- Program Sections -->
-        <section>
+        <section class="mb-10">
 
             <div class="mt-10 mb-8 text-center border-t border-b border-dashed py-8">
                 <h2 class="font-extrabold text-2xl">Program Sections</h2>
                 <p class="max-w-md text-xs mx-auto mt-3 text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-[.8fr_1.2fr] grid-rows-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[.8fr_1.2fr] gap-5">
 
-                <div>
+                <div class="bg-1-bg bg-cover bg-no-repeat bg-center sm:p-7 p-5 text-white rounded-lg">
+                    <h4 class="font-bold text-xl mt-10">Junior Program</h4>
+                    <p class="text-xs text-gray-300 my-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-sm bg-primary-color border-primary-color text-white rounded">Register Now!</button>
+                </div>
+
+                <div class="bg-2-bg bg-cover bg-no-repeat bg-center sm:p-7 p-5 text-white rounded-lg">
+                    <h4 class="font-bold text-xl mt-10">Teenager Program</h4>
+                    <p class="text-xs text-gray-300 my-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-sm bg-primary-color border-primary-color text-white rounded">Register Now!</button>
+                </div>
+
+                <div class="bg-3-bg bg-cover bg-no-repeat bg-center sm:p-7 p-5 text-white rounded-lg md:col-span-2 relative">
+                    <div class="md:absolute md:bottom-7">
+                        <h4 class="font-bold text-xl mt-10">Professional Program</h4>
+                        <p class="text-xs text-gray-300 my-4 max-w-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="btn btn-sm bg-primary-color border-primary-color text-white rounded">Register Now!</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Our Product -->
+        <section class="mb-10">
+
+            <div class="mt-10 mb-8 text-center border-t border-b border-dashed py-8">
+                <h2 class="font-extrabold text-2xl">Our New Product</h2>
+                <p class="max-w-md text-xs mx-auto mt-3 text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <!-- Container -->
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+
+                <!-- item 1 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/5.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
+
+                <!-- item 2 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/6.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 3 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/7.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 4 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/8.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 5 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/9.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 6 -->
+                <div class="md:flex border rounded-lg p-4 gap-3 md:items-center">
+
+                    <div class="md:w-2/5">
+                        <img src="./Images/10.png" class="w-full md:h-36 h-72 object-cover rounded-xl" alt="">
+                    </div>
+
+                    <div class="md:w-3/5 md:mt-0 mt-5">
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <div class="flex items-center gap-2">
+                                <i class='bx bxs-star text-orange-400 text-lg' ></i>
+                                <span class="text-sm text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-eye text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-heart text-gray-500 text-sm"></i>
+                                <span class="text-xs text-gray-500">5.0</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold mt-1">Wold Cup Flags Football</h3>
+                        <p class="text-xs text-gray-600 my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                        <div class="flex items-center gap-2 justify-between flex-wrap">
+                            <h5 class="text-primary-color font-extrabold text-sm">Price-$22.00</h5>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="text-xs">Delivery Fee : Free</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
