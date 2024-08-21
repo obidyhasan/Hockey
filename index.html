@@ -27,10 +27,19 @@
             extend: {
               colors: {
                 'primary-color': '#FF4240',
+                'green-color': '#49D293',
+                'yellow-color': '#FFB546',
+                'blue-color': '#4C8DF1',
               },
               fontFamily:{
                'manrope': 'Manrope, sans-serif',
-              } 
+              },
+              backgroundImage: (theme) => ({
+                'bg-1-bg': "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)), url('./images/2.png')",
+                'bg-2-bg' : "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)) , url('./images/3.png')",
+                'bg-3-bg' : "linear-gradient(to top, gba(19, 19, 24, 0.5),gba(19, 19, 24, 0.5)) , url('./images/3.png')",
+              }),
+
             }
           }
         }
@@ -40,13 +49,13 @@
 <body class="font-manrope">
     
     <!-- Navbar Section -->
-    <section class="bg-white sticky top-0">
+    <section class="bg-white sticky top-0 z-20">
 
         <nav class="max-w-7xl mx-auto p-4">
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 z-10">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="mr-4 lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -96,7 +105,7 @@
                 </div>
 
                 <div class="navbar-end gap-5">
-                    <i class='bx bx-search text-gray-400 text-lg'></i>
+                    <i class='bx bx-search text-gray-400 text-lg sm:block hidden'></i>
                   <a class="btn bg-primary-color text-white rounded-md px-5">Get Ticket</a>
                 </div>
               </div>
@@ -107,26 +116,125 @@
     <!-- Header Section -->
     <header class="max-w-7xl mx-auto px-6">
 
-        <section>
+        <section class="relative">
 
             <div class="carousel w-full">
 
+                <!-- Slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-                    class="w-full" />
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    src="./Images/1.png"
+                    class="w-full min-h-64 object-cover" />
+                  <div class="absolute sm:bottom-0 sm:left-4 space-x-2 left-5 sm:right-0 right-5 bottom-0 flex -translate-y-1/2 transform justify-center sm:justify-start">
+                    <a href="#slide2" class="btn btn-sm btn-circle bg-black text-gray-400 border-black">❮</a>
+                    <a href="#slide2" class="btn btn-sm btn-circle  bg-black text-gray-400 border-black">❯</a>
                   </div>
                 </div>
 
-                
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full min-h-64 object-cover" />
+                    <div class="absolute sm:bottom-0 sm:left-4 space-x-2 left-5 sm:right-0 right-5 bottom-0 flex -translate-y-1/2 transform justify-center sm:justify-start">
+                      <a href="#slide1" class="btn btn-sm btn-circle bg-black text-gray-400 border-black">❮</a>
+                      <a href="#slide1" class="btn btn-sm btn-circle  bg-black text-gray-400 border-black">❯</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:w-2/5 sm:w-1/2 w-full bg-black rounded-xl p-5 sm:absolute sm:bottom-5 sm:right-3 mt-4 sm:mt-0">
+                <h3 class="text-white font-semibold ">Meet all the heroes from the field</h3>
+                <p class="text-xs text-gray-400 mt-3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
 
         </section>
 
     </header>
+
+
+    <!-- Main Section -->
+    <main class="max-w-7xl mx-auto px-6">
+
+        <!-- Hockeys Club -->
+        <section>
+
+            <div class="my-10 text-center border-t border-b border-dashed py-8">
+                <h2 class="font-extrabold text-2xl">Professional Hockeys Club</h2>
+                <p class="max-w-md text-xs mx-auto mt-3 text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+                <!-- Item 1 -->
+                <div class="text-center p-5">
+
+                    <div class="radial-progress text-primary-color" style="--value:82;" role="progressbar"><span class="text-black font-extrabold">87%</span></div>
+
+                    <h4 class="mt-5 font-bold">Prayer Facility</h4>
+                    <p class="text-xs text-gray-600 mt-3">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="text-center p-5">
+
+                    <div class="radial-progress text-green-color" style="--value:90;" role="progressbar"><span class="text-black font-extrabold">95%</span></div>
+
+                    <h4 class="mt-5 font-bold">Experienced Coach</h4>
+                    <p class="text-xs text-gray-600 mt-3">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+
+                
+
+                <!-- Item 3 -->
+                <div class="text-center p-5">
+
+                    <div class="radial-progress text-yellow-color" style="--value:85;" role="progressbar"><span class="text-black font-extrabold">90%</span></div>
+
+                    <h4 class="mt-5 font-bold">Senior Player</h4>
+                    <p class="text-xs text-gray-600 mt-3">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+
+
+                <!-- Item 4 -->
+                <div class="text-center p-5">
+
+                    <div class="radial-progress text-blue-color" style="--value:75;" role="progressbar"><span class="text-black font-extrabold">80%</span></div>
+
+                    <h4 class="mt-5 font-bold">Prayer Facility</h4>
+                    <p class="text-xs text-gray-600 mt-3">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Program Sections -->
+        <section>
+
+            <div class="mt-10 mb-8 text-center border-t border-b border-dashed py-8">
+                <h2 class="font-extrabold text-2xl">Program Sections</h2>
+                <p class="max-w-md text-xs mx-auto mt-3 text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-[.8fr_1.2fr] grid-rows-1">
+
+                <div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
